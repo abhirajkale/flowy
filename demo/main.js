@@ -17,34 +17,70 @@ document.addEventListener("DOMContentLoaded", function(){
         var existingHtml = drag.innerHTML;
         if (drag.querySelector(".blockelemtype").value == "1") {
             ReactDOM.render(React.createElement(FlowCard, {
-              title: "action is performed",
-              subtitle: "Triggers when somebody performs a specified action",
-              src: "assets/action.svg"
+              title: "New visitor",
+              subtitle: "When a new visitor goes to Site 1",
+              imgsrc: "assets/timeblue.svg"
             }), drag);
         } else if (drag.querySelector(".blockelemtype").value == "2") {
             ReactDOM.render(React.createElement(FlowCard, {
-              title: "action is performed",
-              subtitle: "Triggers when somebody performs a specified action",
-              src: "assets/action.svg"
+              title: "Action is performed",
+              subtitle: "When Action 1 is performed",
+              imgsrc: "assets/actionblue.svg"
             }), drag);
         } else if (drag.querySelector(".blockelemtype").value == "3") {
-            drag.innerHTML += "<div class='blockyleft'><img src='assets/timeblue.svg'><p class='blockyname'>Time has passed</p></div><div class='blockyright'><img src='assets/more.svg'></div><div class='blockydiv'></div><div class='blockyinfo'>When <span>10 seconds</span> have passed</div>";
+            ReactDOM.render(React.createElement(FlowCard, {
+              title: "Time has passed",
+              subtitle: "When 10 seconds have passed",
+              imgsrc: "assets/timeblue.svg"
+            }), drag);
         } else if (drag.querySelector(".blockelemtype").value == "4") {
-            drag.innerHTML += "<div class='blockyleft'><img src='assets/errorblue.svg'><p class='blockyname'>Error prompt</p></div><div class='blockyright'><img src='assets/more.svg'></div><div class='blockydiv'></div><div class='blockyinfo'>When <span>Error 1</span> is triggered</div>";
+            ReactDOM.render(React.createElement(FlowCard, {
+              title: "Error prompt",
+              subtitle: "When Error 1 is triggered",
+              imgsrc: "assets/errorblue.svg"
+            }), drag);
         } else if (drag.querySelector(".blockelemtype").value == "5") {
-            drag.innerHTML += "<div class='blockyleft'><img src='assets/databaseorange.svg'><p class='blockyname'>New database entry</p></div><div class='blockyright'><img src='assets/more.svg'></div><div class='blockydiv'></div><div class='blockyinfo'>Add <span>Data object</span> to <span>Database 1</span></div>";
+            ReactDOM.render(React.createElement(FlowCard, {
+              title: "New database entry",
+              subtitle: "Add Data object to Database 1",
+              imgsrc: "assets/databaseorange.svg"
+            }), drag);
         } else if (drag.querySelector(".blockelemtype").value == "6") {
-            drag.innerHTML += "<div class='blockyleft'><img src='assets/databaseorange.svg'><p class='blockyname'>Update database</p></div><div class='blockyright'><img src='assets/more.svg'></div><div class='blockydiv'></div><div class='blockyinfo'>Update <span>Database 1</span></div>";
+            ReactDOM.render(React.createElement(FlowCard, {
+              title: "Update database",
+              subtitle: "Update Database 1",
+              imgsrc: "assets/databaseorange.svg"
+            }), drag);
         } else if (drag.querySelector(".blockelemtype").value == "7") {
-            drag.innerHTML += "<div class='blockyleft'><img src='assets/actionorange.svg'><p class='blockyname'>Perform an action</p></div><div class='blockyright'><img src='assets/more.svg'></div><div class='blockydiv'></div><div class='blockyinfo'>Perform <span>Action 1</span></div>";
+            ReactDOM.render(React.createElement(FlowCard, {
+              title: "Perform an action",
+              subtitle: "Perform Action 1",
+              imgsrc: "assets/actionorange.svg"
+            }), drag);
         } else if (drag.querySelector(".blockelemtype").value == "8") {
-            drag.innerHTML += "<div class='blockyleft'><img src='assets/twitterorange.svg'><p class='blockyname'>Make a tweet</p></div><div class='blockyright'><img src='assets/more.svg'></div><div class='blockydiv'></div><div class='blockyinfo'>Tweet <span>Query 1</span> with the account <span>@alyssaxuu</span></div>";
+            ReactDOM.render(React.createElement(FlowCard, {
+              title: "Make a tweet",
+              subtitle: "Tweet Query 1 with the account @alyssaxuu",
+              imgsrc: "assets/twitterorange.svg"
+            }), drag);
         } else if (drag.querySelector(".blockelemtype").value == "9") {
-            drag.innerHTML += "<div class='blockyleft'><img src='assets/logred.svg'><p class='blockyname'>Add new log entry</p></div><div class='blockyright'><img src='assets/more.svg'></div><div class='blockydiv'></div><div class='blockyinfo'>Add new <span>success</span> log entry</div>";
+            ReactDOM.render(React.createElement(FlowCard, {
+              title: "Add new log entry",
+              subtitle: "Add new success log entry",
+              imgsrc: "assets/logred.svg"
+            }), drag);
         } else if (drag.querySelector(".blockelemtype").value == "10") {
-            drag.innerHTML += "<div class='blockyleft'><img src='assets/logred.svg'><p class='blockyname'>Update logs</p></div><div class='blockyright'><img src='assets/more.svg'></div><div class='blockydiv'></div><div class='blockyinfo'>Edit <span>Log Entry 1</span></div>";
+            ReactDOM.render(React.createElement(FlowCard, {
+              title: "Update logs",
+              subtitle: "Edit Log Entry 1",
+              imgsrc: "assets/logred.svg"
+            }), drag);
         } else if (drag.querySelector(".blockelemtype").value == "11") {
-            drag.innerHTML += "<div class='blockyleft'><img src='assets/errorred.svg'><p class='blockyname'>Prompt an error</p></div><div class='blockyright'><img src='assets/more.svg'></div><div class='blockydiv'></div><div class='blockyinfo'>Trigger <span>Error 1</span></div>";
+            ReactDOM.render(React.createElement(FlowCard, {
+              title: "Prompt an error",
+              subtitle: "Trigger Error 1",
+              imgsrc: "assets/errorred.svg"
+            }), drag);
         }
         drag.innerHTML += existingHtml
         return true;

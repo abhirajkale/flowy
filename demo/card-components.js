@@ -32,14 +32,14 @@ class FlowCard extends React.Component {
     return (
       <>
       <div className='blockyleft'>
-        <img src='assets/actionblue.svg' />
+        <img src={this.props.imgsrc} />
         <p className='blockyname'>{this.props.title}</p>
       </div>
       <div className='blockyright'>
         <img src='assets/more.svg' />
       </div>
       <div className='blockydiv' />
-      <div className='blockyinfo'>When <span>Action 1</span> is performed</div>
+      <div className='blockyinfo'>{this.props.subtitle}</div>
       </>
     );
   }
