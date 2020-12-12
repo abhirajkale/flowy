@@ -45,8 +45,19 @@ class FlowCard extends React.Component {
   }
 }
 
+function ActionsCards() {
+  return (
+    <div>
+      <SimpleCard title="New database entry" subtitle="Adds a new entry to a specified database" src="assets/database.svg" blockval="5" />
+      <SimpleCard title="Update database" subtitle="Edits and deletes database entries and properties" src="assets/database.svg" blockval="6" />
+      <SimpleCard title="Perform an action" subtitle="Performs or edits a specified action" src="assets/action.svg" blockval="7"/>
+      <SimpleCard title="Make a tweet" subtitle="Makes a tweet with a specified query" src="assets/twitter.svg" blockval="8" />
+    </div>
+  );
+}
 
-function App() {
+
+function TriggerCards() {
   return (
     <div>
       <SimpleCard title="New visitor" subtitle="Triggers when somebody visits a specified page" src="assets/eye.svg" blockval="1" />
@@ -57,8 +68,19 @@ function App() {
   );
 }
 
+function LoggerCards() {
+  return (
+    <div>
+      <SimpleCard title="Add new log entry" subtitle="Adds a new log entry to this project" src="assets/log.svg" blockval="9" />
+      <SimpleCard title="Update logs" subtitle="Edits and deletes log entries in this project" src="assets/log.svg" blockval="10" />
+      <SimpleCard title="Prompt an error" subtitle="Triggers a specified error" src="assets/error.svg" blockval="11"/>
+    </div>
+  );
+}
+
+
 ReactDOM.render(
-  <App />,
+  <TriggerCards />,
   document.getElementById('blocklist')
 );
 
