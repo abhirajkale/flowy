@@ -1,5 +1,7 @@
 # Flowy with React frontend
 
+![alt text](https://github.com/abhirajkale/flowy/blob/master/demo/assets/flowly-w-react.png?raw=true)
+
 #### How to run:
 ```cd demo && python3 -m http.server 8000```
 #### Go to:
@@ -30,3 +32,4 @@ subtitle="Triggers when somebody visits a specified page"
 src="assets/eye.svg" 
 blockval="1" />
 ```
+
