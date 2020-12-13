@@ -2,6 +2,9 @@
 
 ![alt text](https://github.com/abhirajkale/flowy/blob/master/demo/assets/flowly-w-react.png?raw=true)
 
+#### Live Demo
+https://abhirajkale.github.io/index.html
+
 #### How to run:
 ```cd demo && python3 -m http.server 8000```
 #### Go to:
